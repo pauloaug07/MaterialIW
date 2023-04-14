@@ -2,13 +2,13 @@
         background-color: rgb(43, 45, 46);
     }
 
-    h1 {
+    h1, h2 {
         text-align: center;
-        color: rgb(255, 255, 255);
+        color: rgb(245, 237, 237);
     }
      
     p {
-        color: white;
+        color: rgb(239, 236, 236);
     }
 
     header {
@@ -44,5 +44,11 @@
         font-size: 1.3em;
         text-align: center;
     }
+
+    h3 {
+        color: white;
+    }
+
+
 
     
