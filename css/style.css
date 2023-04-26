@@ -2,11 +2,6 @@
         background-color: rgb(43, 45, 46);
     }
 
-    h1, h2 {
-        text-align: center;
-        color: rgb(245, 237, 237);
-    }
-     
     p {
         color: rgb(239, 236, 236);
     }
@@ -14,6 +9,8 @@
     header {
         width: 100%;
         background-color: rgb(181, 174, 169);
+        padding-bottom: 3%;
+        padding-top: 3%;
     }
 
     .logo {
@@ -27,15 +24,20 @@
         text-align: center;
         font-size: 1.4em;
     }
-
+    
+    figure {
+        text-align: center;
+    }
+    
     .banner {
-        width: 100%;
+        width: 90%;
     }
 
     .container {
         background-color: rgb(63, 67, 67);
         width: 80%;
         margin: auto;
+        text-align: center;
     }
 
     footer {
@@ -47,6 +49,15 @@
 
     h3 {
         color: white;
+    }
+
+    #mapa {
+        width:85%;
+    }
+
+    section{
+        padding-top: 4%;
+        background-color: rgb(75, 71, 71);
     }
 
 
