@@ -1,7 +1,8 @@
     body {
-        background-image: url(../img/backgroundsitehk.jpg);
-        background-repeat: no-repeat;
+        background-image: url(../img/background2.jpg);
         background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100%;
         line-height: 1.5;
         font-family: 'Roboto Mono', monospace;
         font-size: 1.1em;
@@ -15,8 +16,7 @@
 
     header {
         width: 100%;
-        background-color: rgb(75, 71, 71);
-        
+        background-color: rgb(38, 36, 126);
     }
 
     .logo {
@@ -26,16 +26,16 @@
     }
 
     nav {
-        color:  rgb(75, 71, 71);
+        color: rgb(41, 38, 107);
         text-align: center;
         font-size: 1.4em;
     }
-    
+
     figure {
         text-align: center;
         margin-top: 3.3%;
     }
-    
+
     .banner {
         width: 90%;
     }
@@ -46,7 +46,7 @@
     }
 
     footer {
-        background-color:  rgb(75, 71, 71);
+        background-color:  rgb(41, 38, 107);
         color: rgb(239, 236, 236);
         font-size: 1.3em;
         text-align: center;
@@ -59,30 +59,35 @@
     }
 
     #mapa {
-        width:85%;
+        width: 100%;
     }
 
-    section{
-        padding-top: 3.2%;
-        background-color: rgb(75, 71, 71);
-        padding-bottom: 3.2%;
-        padding-left: 1.5%;
-        padding-right: 1.5%;
-    }
-
-    .area, .hist, .amu{
+    section {
+        padding-top: 1.8%;
+        padding-bottom: 1.8%;
+        background-color: rgb(41, 38, 107);
+        padding-left: 2%;
+        padding-right: 2%;
         margin-top: 10%;
         margin-bottom: 10%;
     }
 
-    h1{
+
+    h1 {
         color: rgb(239, 236, 236);
         font-size: 1.4em;
         text-align: center;
+        font-weight: bold;
+
     }
-    
-    
+
+    li {
+        color: white;
+    }
 
 
-
-    
+    h3 {
+        color: white;
+        font-weight: bold;
+        text-decoration: underline;
+    }
