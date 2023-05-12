@@ -29,6 +29,7 @@
         color: rgb(41, 38, 107);
         text-align: center;
         font-size: 1.4em;
+        padding-bottom: 1.5%;
     }
 
     figure {
@@ -37,7 +38,7 @@
     }
 
     .banner {
-        width: 90%;
+        width: 70%;
     }
 
     .container {
@@ -49,7 +50,7 @@
         background-color:  rgb(41, 38, 107);
         color: rgb(239, 236, 236);
         font-size: 1.3em;
-        text-align: center;
+        text-align: left;
         padding-bottom: 1.5%;
         padding-top: 1.5%;
     }
@@ -90,4 +91,9 @@
         color: white;
         font-weight: bold;
         text-decoration: underline;
+    }
+
+    #git {
+        width: 7%;
+        padding-top: 1%;
     }
