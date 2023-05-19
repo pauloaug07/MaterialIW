@@ -1,80 +1,85 @@
-    body {
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    body{
         background-image: url(../img/background2.jpg);
         background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: 100%;
         line-height: 1.5;
         font-family: 'Roboto Mono', monospace;
-        font-size: 1.1em;
     }
 
-    p {
+    p{
         color: rgb(239, 236, 236);
         text-align: justify;
         text-indent: 15px;
+        font-size: 1.1em;
     }
 
-    header {
+    header{
         width: 100%;
         background-color: rgb(38, 36, 126);
+        font-size: 0.8em;
     }
 
-    .logo {
+    .logo{
         color: rgb(12, 9, 9);
         text-align: center;
         font-size: 1.4em;
     }
 
-    nav {
+    nav{
         color: rgb(41, 38, 107);
         text-align: center;
         font-size: 1.4em;
         padding-bottom: 1.5%;
     }
 
-    figure {
+    figure{
         text-align: center;
         margin-top: 3.3%;
+        padding-top: 1.4%;
     }
 
-    .banner {
+    .banner{
         width: 70%;
     }
 
-    .container {
+    .container{
         width: 80%;
         margin: auto;
+        font-size: 1.1em;
     }
 
-    footer {
+    footer{
         background-color:  rgb(41, 38, 107);
         color: rgb(239, 236, 236);
         font-size: 1.3em;
         text-align: left;
-        padding-bottom: 1.5%;
-        padding-top: 1.5%;
+        padding-bottom: 1.2%;
+        padding-top: 1.2%;
     }
 
-    h3 {
+    h3{
         color: white;
     }
 
-    #mapa {
+    #mapa{
         width: 100%;
     }
 
-    section {
-        padding-top: 1.8%;
+    section{
+        padding-top: 1.5%;
         padding-bottom: 1.8%;
         background-color: rgb(41, 38, 107);
         padding-left: 2%;
         padding-right: 2%;
-        margin-top: 10%;
-        margin-bottom: 10%;
+        margin-top: 7%;
+        margin-bottom: 7%;
     }
 
 
-    h1 {
+    h1{
         color: rgb(239, 236, 236);
         font-size: 1.4em;
         text-align: center;
@@ -94,6 +99,13 @@
     }
 
     #git {
-        width: 7%;
+        width: 5%;
         padding-top: 1%;
     }
+
+  .imgdir{
+    float: right;
+  }
+  .imgtam{
+    padding: 1.7%;
+  }
