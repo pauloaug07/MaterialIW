@@ -162,4 +162,12 @@
         border-width: 4px;
         text-align: center;
     }
+
+    table, th, td {
+        border:2px solid black;
+        width: 100%;
+        background-color: rgb(158, 162, 167);
+        text-align: left;
+        
+    }
       
