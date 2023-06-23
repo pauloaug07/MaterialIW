@@ -128,7 +128,7 @@
         flex-direction: row;
       }
       
-      @media (max-width: 400px) {
+      @media (max-width: 600px) {
         .flex-container {
           flex-direction: column;
         }
@@ -144,7 +144,7 @@
       }
 
       .img-card{
-        width: 87%;
+        width: 100%;
         border-style: double;
         border-color: #4a4848;
         background-image: linear-gradient(to right, #3d3b3b , #787575);
@@ -154,7 +154,7 @@
     }
     
     .card{
-        width: 87%;
+        width: 100%;
         background-image: linear-gradient(to right, #3d3b3b , #787575);
         box-shadow: 15px 15px 15px 2px rgb(41, 40, 40);  
         border-style: double;
@@ -167,7 +167,7 @@
         border:2px solid black;
         width: 100%;
         background-color: rgb(158, 162, 167);
-        text-align: center;
+        text-align: left;
     }
 
   
