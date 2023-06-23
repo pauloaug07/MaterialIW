@@ -163,11 +163,14 @@
         text-align: center;
     }
 
-    table, th, td {
+    table {
         border:2px solid black;
         width: 100%;
         background-color: rgb(158, 162, 167);
-        text-align: left;
-        
+        text-align: center;
+    }
+
+    td, th {
+        width:3%;
     }
       
