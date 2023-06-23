@@ -170,5 +170,9 @@
         text-align: left;
     }
 
+    td, th {
+    padding: 15em;
+    }
+
   
       
