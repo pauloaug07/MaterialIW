@@ -18,7 +18,7 @@
 
     header {
         width: 100%;
-        background-color: rgb(38, 36, 126);
+        background-color:  rgb(41, 38, 107);
         font-size: 0.8em;
     }
 
@@ -29,7 +29,7 @@
     }
 
     nav {
-        color: rgb(41, 38, 107);
+        color:  rgb(41, 38, 107);
         text-align: center;
         font-size: 1.4em;
         padding-bottom: 1.7%;
@@ -121,17 +121,12 @@
     .col-6 {
         width: 50%;
         padding-top: 1.8%;
+        text-align: center;
     }
 
     .flex-container {
         display: flex;
         flex-direction: row;
-      }
-      
-      @media (max-width: 600px) {
-        .flex-container {
-          flex-direction: column;
-        }
       }
 
       #imgamu {
@@ -140,11 +135,15 @@
       }
     
       #iselda {
-        width: 25%;
+        width: 23%;
+      }
+
+      #cornifer {
+        width: 40%;
       }
 
       .img-card{
-        width: 100%;
+        width: 85%;
         border-style: double;
         border-color: #4a4848;
         background-image: linear-gradient(to right, #3d3b3b , #787575);
@@ -154,14 +153,26 @@
     }
     
     .card{
-        width: 100%;
+        width: 85%;
         background-image: linear-gradient(to right, #3d3b3b , #787575);
         box-shadow: 15px 15px 15px 2px rgb(41, 40, 40);  
         border-style: double;
         border-color: #4a4848;
         border-width: 4px;
         text-align: center;
+        transition: 0.5s;
     }
+
+    @media (max-width: 624px) {
+        .linha {
+          flex-direction: column;
+        }
+    
+        .col-6 {
+            width: 100%;
+        }
+      }
+    
 
     table, td, th {
         border:2px solid black;
@@ -171,7 +182,11 @@
     }
 
     td, th {
-    padding: 15em;
+    padding: 1.35em;
+    }
+
+    th {
+        font-weight: bold;
     }
 
   
