@@ -3,8 +3,10 @@
     }
 
     body {
-        background-image: url(../img/background2.jpg);
+        background-image: url(../img/background2.png);
         background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
         line-height: 1.5;
         font-family: 'Roboto Mono', monospace;
     }
