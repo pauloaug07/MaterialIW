@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position - CSS</title>
+    <style>
+        nav {
+            color: rgb(181, 207, 134);
+            text-align: center;
+            font-size: 1.4em;
+            padding-bottom: 1.7%;
+            padding-top: 1.7%;
+        }
+
+        body {
+            background-color: beige;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            width: 80%;
+            margin: auto;
+        }
+
+        #centro {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        #topoes {
+            font-size: 24px;
+            position: absolute;
+            top: 14px;
+            left: 28px
+        }
+
+        #topodir {
+            font-size: 24px;
+            position: absolute;
+            top: 14px;
+            right: 28px
+        }
+
+        #baixoes {
+            font-size: 24px;
+            position: absolute;
+            bottom: 14px;
+            left: 28px
+        }
+
+        #baixodir {
+            font-size: 24px;
+            position: absolute;
+            bottom: 14px;
+            right: 28px
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            opacity: 0.4;
+        }
+
+        .position {
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+        footer {
+            font-size: medium;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            border: 2px solid black;
+            width: 100%;
+            padding-bottom: 1.2em;
+            padding-top: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html#centro">Centro</a></li>
+                <li><a href="index.html#topoes">Esquerda superior</a></li>
+                <li><a href="index.html#topodir">Direita superior</a></li>
+                <li><a href="index.html#baixoes">Esquerda inferior</a></li>
+                <li><a href="index.html#baixodir">Direita inferior</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+            <img src="img/testemtnha.jpg" alt="montanhas" width="1000px" height="300">
+            <div id="centro">Texto centralizado</div>
+            <div id="topoes">Esquerda superior</div>
+            <div id="topodir">Direita superior</div>
+            <div id="baixoes">Esquerda inferior</div>
+            <div id="baixodir">Direita inferior</div>
+    </div>
+
+    <footer>
+        Teste de position, z-index.
+    </footer>
+</body>
+
+</html>
