@@ -20,10 +20,6 @@
         width: 70%;
         max-width: 400px;
     }
-
-    .menu {
-        padding-top: 2%;
-    }
     
     .menu ul {
         list-style: none;
@@ -39,7 +35,7 @@
         text-decoration: none;
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 700px) {
         .menu {
           flex-direction: column;
           align-items: center;
@@ -87,7 +83,7 @@
     }
 
     .active {
-        background-color: #308199;
+        background-color: #6e7fd6;
         padding: 5px;
     }
 
@@ -96,12 +92,6 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-    }
-
-    .menu li {
-        display: flex;
-        list-style: none;
-        gap: 20px
     }
 
     figure {
