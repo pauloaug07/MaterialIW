@@ -12,14 +12,51 @@
     }
 
     .logo {
-        text-align: center;
-        padding-top: 1.7%;
+        padding-top: 1.9%;
+        max-width: 70%;
     }
 
     .logohk {
-        width: 30%;
+        width: 70%;
+        max-width: 400px;
+    }
+
+    .menu {
+        padding-top: 2%;
     }
     
+    .menu ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 0 15px;
+    }
+
+    .menu a {
+        text-decoration: none;
+    }
+
+    @media screen and (max-width: 900px) {
+        .menu {
+          flex-direction: column;
+          align-items: center;
+          padding: 10px;
+        }
+      
+        .menu ul {
+          margin-top: 10px;
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .menu li {
+          margin: 5px 0;
+        }
+      }
+
     p {
         color: rgb(239, 236, 236);
         text-align: justify;
@@ -31,33 +68,42 @@
         width: 100%;
         background-color: rgb(42, 38, 116);
         font-size: 0.8em;
+        padding-bottom: 0.4%;
     }
-
-    
 
     nav {
         color: rgb(41, 38, 107);
         text-align: center;
-        font-size: 1.4em;
-        padding-bottom: 1.7%;
-        padding-top: 1.7%;
+        font-size: 1.2em;
+        padding-bottom: 1.2%;
+        padding-top: 2%;
+        margin-bottom: 1.2%;
     }
-      
-      li a:hover:not(.active) {
-        background-color: #232222;
+
+    li a:hover:not(.active) {
+        background-color: #3d3b3b;
         padding: 5px;
         margin: 5px;
-      }
-      
-      .active {
-        background-color: #586265;
-        padding: 5px;
-      }
+    }
 
-      .menu li {
+    .active {
+        background-color: #308199;
         padding: 5px;
-      }
-      
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .menu li {
+        display: flex;
+        list-style: none;
+        gap: 20px
+    }
+
     figure {
         text-align: center;
         margin-top: 3.3%;
@@ -118,7 +164,7 @@
     ul {
         width: 100%;
     }
-    
+
     li {
         color: white;
     }
@@ -205,14 +251,17 @@
     }
 
 
-    table, td, th {
+    table,
+    td,
+    th {
         border: 2px solid black;
         width: 100%;
         background-color: rgb(158, 162, 167);
         text-align: left;
     }
 
-    td, th {
+    td,
+    th {
         padding: 1.35em;
     }
 
