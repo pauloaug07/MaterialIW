@@ -7,14 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position - CSS</title>
     <style>
-        nav {
-            color: rgb(181, 207, 134);
-            text-align: center;
-            font-size: 1.4em;
-            padding-bottom: 1.7%;
-            padding-top: 1.7%;
-        }
-
         body {
             background-color: beige;
         }
@@ -62,7 +54,7 @@
             right: 28px
         }
 
-        img {
+        #fdopaco {
             width: 100%;
             height: auto;
             opacity: 0.4;
@@ -73,45 +65,234 @@
             padding-right: 2%;
         }
 
-        footer {
-            font-size: medium;
+        #static {
+            position: static;
+            font-size: large;
+            margin: auto;
             text-align: center;
-            position: fixed;
-            bottom: 0;
             border: 2px solid black;
+        }
+
+        #xfix {
+            position: absolute;
+            right: 0;
+            top: 30%;
+            width: 8%;
+            z-index: -1;
+        }
+
+        #xfix2 {
+            position: absolute;
+            right: 25%;
+            top: 30%;
+            width: 8%;
+            z-index: -1;
+        }
+
+        #fix {
+            position: fixed;
             width: 100%;
-            padding-bottom: 1.2em;
-            padding-top: 1.2em;
+            text-align: center;
+            top: 0;
+            background-color: rgb(159, 159, 214);
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+
+        .texto {
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        #text2 {
+            margin-top: 250px;
+            margin-bottom: 3%;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul class="menu">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="index.html#centro">Centro</a></li>
-                <li><a href="index.html#topoes">Esquerda superior</a></li>
-                <li><a href="index.html#topodir">Direita superior</a></li>
-                <li><a href="index.html#baixoes">Esquerda inferior</a></li>
-                <li><a href="index.html#baixodir">Direita inferior</a></li>
-            </ul>
-        </nav>
+        <h1 id="fix">Teste de positions e z-index CSS</h1>
     </header>
+    <div>
+        <div id="text2">
+            <p id="static"> Exemplo de position static: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus
+                mattis quam sit amet tellus
+                porttitor lobortis. Suspendisse gravida nibh id faucibus scelerisque. Praesent dapibus lacus ipsum, sed
+                vulputate risus luctus sed. Curabitur consectetur elit nec lectus suscipit sagittis. Donec id mi
+                imperdiet, condimentum tortor ut, consectetur ex. Duis pulvinar ac ex ac viverra. Morbi lobortis
+                ultrices sapien a vehicula. Sed ultricies lorem sed ipsum sagittis dignissim. Maecenas ac dapibus nibh.
+                Mauris diam libero, aliquet vel justo ut, bibendum eleifend sapien. Duis rhoncus augue neque, non
+                posuere orci convallis id. Nunc varius vitae ex quis ullamcorper. Ut feugiat nibh ante, at accumsan nisi
+                imperdiet non. <br>
 
-    <div class="container">
-            <img src="img/testemtnha.jpg" alt="montanhas" width="1000px" height="300">
-            <div id="centro">Texto centralizado</div>
-            <div id="topoes">Esquerda superior</div>
-            <div id="topodir">Direita superior</div>
-            <div id="baixoes">Esquerda inferior</div>
-            <div id="baixodir">Direita inferior</div>
+                Proin suscipit ac tellus a rutrum. Sed dignissim, dui at tempus venenatis, tortor elit fringilla quam,
+                vel sollicitudin tortor diam ut urna. Proin sed condimentum augue, vitae semper mi. In hac habitasse
+                platea dictumst. Ut pulvinar, lectus quis tempor iaculis, nisi nulla sagittis justo, at bibendum turpis
+                eros nec nisi. Sed luctus, orci eget feugiat mollis, turpis erat dignissim dui, id consequat justo
+                mauris a velit. Cras sit amet rhoncus ligula. Maecenas diam dui, commodo in libero et, posuere congue
+                augue. Donec et maximus justo. In ut sem lacinia, molestie leo sed, ultricies eros. Cras ut cursus
+                lacus, et vulputate turpis. Mauris luctus suscipit dapibus. Maecenas consequat, elit vitae egestas
+                molestie, metus enim pulvinar elit, quis blandit orci enim sit amet eros. <br>
+
+                Suspendisse quis tellus eu odio porta congue. Sed at elit viverra, venenatis nisl a, volutpat nibh.
+                Donec aliquet auctor ipsum, id rutrum sem ornare at. Vivamus a metus mi. Mauris eu ex mauris. Class
+                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse
+                potenti. Aenean dictum lorem ac vulputate vestibulum. Sed ullamcorper placerat dui eu gravida.
+                Suspendisse cursus augue lacus, sed porttitor nulla convallis eget. Duis viverra ex luctus luctus
+                tincidunt. Vestibulum id massa quis ligula convallis mollis at placerat erat. Vestibulum aliquet orci a
+                dui faucibus aliquam. <br>
+
+                Pellentesque maximus magna sed nibh varius consectetur. Morbi gravida lobortis lacus a consectetur. Orci
+                varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque massa
+                arcu, molestie a felis sit amet, mattis cursus ex. Etiam vulputate mattis interdum. Aenean elementum
+                porttitor justo, nec imperdiet metus laoreet eget. Pellentesque imperdiet rhoncus massa. Vivamus
+                convallis tellus porta enim commodo pellentesque. Phasellus eget sem ac magna porta iaculis. Nullam
+                magna erat, hendrerit quis pharetra eleifend, vehicula at est. Integer ut urna scelerisque, consectetur
+                tellus nec, egestas felis. Phasellus a lectus dui. Aenean ut augue pharetra, volutpat lacus vel, finibus
+                ex. <br>
+
+            </p>
+        </div>
+        <img id="xfix" src="img/fixed.png">
+        <img id="xfix2" src="img/zin.png">
     </div>
 
-    <footer>
-        Teste de position, z-index.
-    </footer>
+    <div class="container">
+        <img id="fdopaco" src="img/testemtnha.jpg" alt="montanhas" width="1000px" height="300">
+        <div id="centro">Texto centralizado</div>
+        <div id="topoes">Esquerda superior</div>
+        <div id="topodir">Direita superior</div>
+        <div id="baixoes">Esquerda inferior</div>
+        <div id="baixodir">Direita inferior</div>
+    </div>
+
+    <div>
+        <div class="texto">
+            <p id="static"> Exemplo de position static: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus
+                mattis quam sit amet tellus
+                porttitor lobortis. Suspendisse gravida nibh id faucibus scelerisque. Praesent dapibus lacus ipsum, sed
+                vulputate risus luctus sed. Curabitur consectetur elit nec lectus suscipit sagittis. Donec id mi
+                imperdiet, condimentum tortor ut, consectetur ex. Duis pulvinar ac ex ac viverra. Morbi lobortis
+                ultrices sapien a vehicula. Sed ultricies lorem sed ipsum sagittis dignissim. Maecenas ac dapibus nibh.
+                Mauris diam libero, aliquet vel justo ut, bibendum eleifend sapien. Duis rhoncus augue neque, non
+                posuere orci convallis id. Nunc varius vitae ex quis ullamcorper. Ut feugiat nibh ante, at accumsan nisi
+                imperdiet non. <br>
+
+                Proin suscipit ac tellus a rutrum. Sed dignissim, dui at tempus venenatis, tortor elit fringilla quam,
+                vel sollicitudin tortor diam ut urna. Proin sed condimentum augue, vitae semper mi. In hac habitasse
+                platea dictumst. Ut pulvinar, lectus quis tempor iaculis, nisi nulla sagittis justo, at bibendum turpis
+                eros nec nisi. Sed luctus, orci eget feugiat mollis, turpis erat dignissim dui, id consequat justo
+                mauris a velit. Cras sit amet rhoncus ligula. Maecenas diam dui, commodo in libero et, posuere congue
+                augue. Donec et maximus justo. In ut sem lacinia, molestie leo sed, ultricies eros. Cras ut cursus
+                lacus, et vulputate turpis. Mauris luctus suscipit dapibus. Maecenas consequat, elit vitae egestas
+                molestie, metus enim pulvinar elit, quis blandit orci enim sit amet eros. <br>
+
+                Suspendisse quis tellus eu odio porta congue. Sed at elit viverra, venenatis nisl a, volutpat nibh.
+                Donec aliquet auctor ipsum, id rutrum sem ornare at. Vivamus a metus mi. Mauris eu ex mauris. Class
+                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse
+                potenti. Aenean dictum lorem ac vulputate vestibulum. Sed ullamcorper placerat dui eu gravida.
+                Suspendisse cursus augue lacus, sed porttitor nulla convallis eget. Duis viverra ex luctus luctus
+                tincidunt. Vestibulum id massa quis ligula convallis mollis at placerat erat. Vestibulum aliquet orci a
+                dui faucibus aliquam. <br>
+
+                Pellentesque maximus magna sed nibh varius consectetur. Morbi gravida lobortis lacus a consectetur. Orci
+                varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque massa
+                arcu, molestie a felis sit amet, mattis cursus ex. Etiam vulputate mattis interdum. Aenean elementum
+                porttitor justo, nec imperdiet metus laoreet eget. Pellentesque imperdiet rhoncus massa. Vivamus
+                convallis tellus porta enim commodo pellentesque. Phasellus eget sem ac magna porta iaculis. Nullam
+                magna erat, hendrerit quis pharetra eleifend, vehicula at est. Integer ut urna scelerisque, consectetur
+                tellus nec, egestas felis. Phasellus a lectus dui. Aenean ut augue pharetra, volutpat lacus vel, finibus
+                ex. <br>
+
+            </p>
+        </div>
+        
+        <div class="texto">
+            <p id="static"> Exemplo de position static: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus
+                mattis quam sit amet tellus
+                porttitor lobortis. Suspendisse gravida nibh id faucibus scelerisque. Praesent dapibus lacus ipsum, sed
+                vulputate risus luctus sed. Curabitur consectetur elit nec lectus suscipit sagittis. Donec id mi
+                imperdiet, condimentum tortor ut, consectetur ex. Duis pulvinar ac ex ac viverra. Morbi lobortis
+                ultrices sapien a vehicula. Sed ultricies lorem sed ipsum sagittis dignissim. Maecenas ac dapibus nibh.
+                Mauris diam libero, aliquet vel justo ut, bibendum eleifend sapien. Duis rhoncus augue neque, non
+                posuere orci convallis id. Nunc varius vitae ex quis ullamcorper. Ut feugiat nibh ante, at accumsan nisi
+                imperdiet non. <br>
+
+                Proin suscipit ac tellus a rutrum. Sed dignissim, dui at tempus venenatis, tortor elit fringilla quam,
+                vel sollicitudin tortor diam ut urna. Proin sed condimentum augue, vitae semper mi. In hac habitasse
+                platea dictumst. Ut pulvinar, lectus quis tempor iaculis, nisi nulla sagittis justo, at bibendum turpis
+                eros nec nisi. Sed luctus, orci eget feugiat mollis, turpis erat dignissim dui, id consequat justo
+                mauris a velit. Cras sit amet rhoncus ligula. Maecenas diam dui, commodo in libero et, posuere congue
+                augue. Donec et maximus justo. In ut sem lacinia, molestie leo sed, ultricies eros. Cras ut cursus
+                lacus, et vulputate turpis. Mauris luctus suscipit dapibus. Maecenas consequat, elit vitae egestas
+                molestie, metus enim pulvinar elit, quis blandit orci enim sit amet eros. <br>
+
+                Suspendisse quis tellus eu odio porta congue. Sed at elit viverra, venenatis nisl a, volutpat nibh.
+                Donec aliquet auctor ipsum, id rutrum sem ornare at. Vivamus a metus mi. Mauris eu ex mauris. Class
+                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse
+                potenti. Aenean dictum lorem ac vulputate vestibulum. Sed ullamcorper placerat dui eu gravida.
+                Suspendisse cursus augue lacus, sed porttitor nulla convallis eget. Duis viverra ex luctus luctus
+                tincidunt. Vestibulum id massa quis ligula convallis mollis at placerat erat. Vestibulum aliquet orci a
+                dui faucibus aliquam. <br>
+
+                Pellentesque maximus magna sed nibh varius consectetur. Morbi gravida lobortis lacus a consectetur. Orci
+                varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque massa
+                arcu, molestie a felis sit amet, mattis cursus ex. Etiam vulputate mattis interdum. Aenean elementum
+                porttitor justo, nec imperdiet metus laoreet eget. Pellentesque imperdiet rhoncus massa. Vivamus
+                convallis tellus porta enim commodo pellentesque. Phasellus eget sem ac magna porta iaculis. Nullam
+                magna erat, hendrerit quis pharetra eleifend, vehicula at est. Integer ut urna scelerisque, consectetur
+                tellus nec, egestas felis. Phasellus a lectus dui. Aenean ut augue pharetra, volutpat lacus vel, finibus
+                ex. <br>
+
+            </p>
+        </div>
+        <div class="texto">
+            <p id="static"> Exemplo de position static: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus
+                mattis quam sit amet tellus
+                porttitor lobortis. Suspendisse gravida nibh id faucibus scelerisque. Praesent dapibus lacus ipsum, sed
+                vulputate risus luctus sed. Curabitur consectetur elit nec lectus suscipit sagittis. Donec id mi
+                imperdiet, condimentum tortor ut, consectetur ex. Duis pulvinar ac ex ac viverra. Morbi lobortis
+                ultrices sapien a vehicula. Sed ultricies lorem sed ipsum sagittis dignissim. Maecenas ac dapibus nibh.
+                Mauris diam libero, aliquet vel justo ut, bibendum eleifend sapien. Duis rhoncus augue neque, non
+                posuere orci convallis id. Nunc varius vitae ex quis ullamcorper. Ut feugiat nibh ante, at accumsan nisi
+                imperdiet non. <br>
+
+                Proin suscipit ac tellus a rutrum. Sed dignissim, dui at tempus venenatis, tortor elit fringilla quam,
+                vel sollicitudin tortor diam ut urna. Proin sed condimentum augue, vitae semper mi. In hac habitasse
+                platea dictumst. Ut pulvinar, lectus quis tempor iaculis, nisi nulla sagittis justo, at bibendum turpis
+                eros nec nisi. Sed luctus, orci eget feugiat mollis, turpis erat dignissim dui, id consequat justo
+                mauris a velit. Cras sit amet rhoncus ligula. Maecenas diam dui, commodo in libero et, posuere congue
+                augue. Donec et maximus justo. In ut sem lacinia, molestie leo sed, ultricies eros. Cras ut cursus
+                lacus, et vulputate turpis. Mauris luctus suscipit dapibus. Maecenas consequat, elit vitae egestas
+                molestie, metus enim pulvinar elit, quis blandit orci enim sit amet eros. <br>
+
+                Suspendisse quis tellus eu odio porta congue. Sed at elit viverra, venenatis nisl a, volutpat nibh.
+                Donec aliquet auctor ipsum, id rutrum sem ornare at. Vivamus a metus mi. Mauris eu ex mauris. Class
+                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse
+                potenti. Aenean dictum lorem ac vulputate vestibulum. Sed ullamcorper placerat dui eu gravida.
+                Suspendisse cursus augue lacus, sed porttitor nulla convallis eget. Duis viverra ex luctus luctus
+                tincidunt. Vestibulum id massa quis ligula convallis mollis at placerat erat. Vestibulum aliquet orci a
+                dui faucibus aliquam. <br>
+
+                Pellentesque maximus magna sed nibh varius consectetur. Morbi gravida lobortis lacus a consectetur. Orci
+                varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque massa
+                arcu, molestie a felis sit amet, mattis cursus ex. Etiam vulputate mattis interdum. Aenean elementum
+                porttitor justo, nec imperdiet metus laoreet eget. Pellentesque imperdiet rhoncus massa. Vivamus
+                convallis tellus porta enim commodo pellentesque. Phasellus eget sem ac magna porta iaculis. Nullam
+                magna erat, hendrerit quis pharetra eleifend, vehicula at est. Integer ut urna scelerisque, consectetur
+                tellus nec, egestas felis. Phasellus a lectus dui. Aenean ut augue pharetra, volutpat lacus vel, finibus
+                ex. <br>
+
+            </p>
+        </div>
+    </div>
+
 </body>
 
 </html>
