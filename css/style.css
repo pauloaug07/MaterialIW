@@ -20,7 +20,7 @@
         width: 70%;
         max-width: 400px;
     }
-    
+
     .menu ul {
         list-style: none;
         display: flex;
@@ -37,21 +37,21 @@
 
     @media screen and (max-width: 700px) {
         .menu {
-          flex-direction: column;
-          align-items: center;
-          padding: 10px;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
         }
-      
+
         .menu ul {
-          margin-top: 10px;
-          flex-direction: column;
-          align-items: center;
+            margin-top: 10px;
+            flex-direction: column;
+            align-items: center;
         }
-      
+
         .menu li {
-          margin: 5px 0;
+            margin: 5px 0;
         }
-      }
+    }
 
     p {
         color: rgb(239, 236, 236);
@@ -122,6 +122,11 @@
 
     h3 {
         color: white;
+    }
+
+    h2 {
+        color: white;
+        font-weight: bold;
     }
 
     #mapa {
@@ -235,9 +240,11 @@
             flex-direction: column;
         }
 
-        .col-6 {
+        .col-6
+        {
+            margin-top: 8%;
             width: 100%;
-        }
+    }
     }
 
 

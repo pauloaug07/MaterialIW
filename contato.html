@@ -20,7 +20,7 @@
 			<div class="logo">
 				<a href="index.html"><img class="logohk" src="img/logohk.png" alt="logo hollow knight"></a>
 			</div>
-			<ul class="menu">
+			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="trilhas.html">Trilha Sonora</a></li>
 				<li><a class="active" href="contato.html">Contato</a></li>
@@ -38,10 +38,31 @@
 	</figure>
 	<div class="container">
 		<section>
-			<h1>Formulário para contato.</h1>
-		</section>
-		<section>
-			<h1>------------formulário---------------</h1>
+			<div class="linha">
+				<div class="col-6">
+					<h2>Formulário para Contato (E-mail)</h2><br>
+					<form action="mailto:paulo.costa181@etec.sp.gov.br" method="POST" enctype="text/plain">
+						<h3>Escreva seu nome:</h3>
+						<input name="nome" type="text"><br>
+						<br>
+						<h3>Escreva seu e-mail:</h3>
+						<input name="email" type="email"><br>
+						<br>
+						<h3>Escreva a sua mensagem:</h3>
+						<textarea name="mensagem" cols="30" rows="10"></textarea><br>
+						<input type="submit" value="Enviar">
+						<input type="reset" value="Limpar">
+					</form>
+				</div>
+				<div class="col-6">
+					<h2>Informações para contato:</h2><br>
+					<h3>Local:</h3>
+					<p style="font-size: 0.9em;">R. Bélgica, 88 - Jardim Alvorada, Ribeirão Pires - SP, 09402-060
+					</p><br>
+					<h3>E-mail:</h3>
+					<p style="font-size: 0.9em; text-align: center;">paulo.costa181@etec.sp.gov.br</p>
+				</div>
+			</div>
 		</section>
 	</div>
 	<footer>
