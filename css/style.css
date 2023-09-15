@@ -247,7 +247,6 @@
     }
     }
 
-
     table,
     td,
     th {
@@ -255,11 +254,7 @@
         width: 100%;
         background-color: rgb(158, 162, 167);
         text-align: left;
-    }
-
-    td,
-    th {
-        padding: 1.35em;
+        padding: 0.7em;
     }
 
     th {
